@@ -10,12 +10,9 @@ export default function Home() {
 	);
 }
 
-
-export const getServerSideProps:GetServerSideProps = async () => {
+export const getServerSideProps = async () => {
 	let blog = getBlogs();
 	return {
-		props: {
-
-		}
-	}
-}
+		props: {},
+	};
+};
